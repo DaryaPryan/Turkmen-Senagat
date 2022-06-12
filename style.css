@@ -1,0 +1,462 @@
+@font-face {
+    font-family: 'Gilroy';
+    src: url('fonts/GilroyBold/gilroy-bold-webfont.eot');
+    src: local('☺'), url('fonts/GilroyBold/gilroy-bold-webfont.woff') format('woff'), url('fonts/GilroyBold/gilroy-bold-webfont.ttf') format('truetype'), url('fonts/GilroyBold/gilroy-bold-webfont.svg') format('svg');
+    font-weight: 700px;
+    font-style: bold;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('fonts/GilroyMedium/gilroy-medium-webfont.eot');
+    src: local('☺'), url('fonts/GilroyMedium/gilroy-medium-webfont.woff') format('woff'), url('fonts/GilroyMedium/gilroy-medium-webfont.ttf') format('truetype'), url('fonts/GilroyMedium/gilroy-medium-webfont.svg') format('svg');
+    font-weight: 500px;
+    font-style: medium;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('fonts/GilroyRegular/gilroy-regular-webfont.eot');
+    src: local('☺'), url('fonts/GilroyRegular/gilroy-regular-webfont.woff') format('woff'), url('fonts/GilroyRegular/gilroy-regular-webfont.ttf') format('truetype'), url('fonts/GilroyRegular/gilroy-regular-webfont.svg') format('svg');
+    font-weight: 400px;
+    font-style: regular;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gilroy', arial, sans-serif;
+}
+
+body {
+    background-color: #E5E5E5;;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+button :hover {
+    box-shadow: 0 12px 16px 0 rgba(224, 9, 9, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.content {
+    max-width: 1260px;
+    margin: 0 auto;
+    height: 4600px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+    height: 192px;
+}
+
+.header .content_logo img {
+    width: 213.5px;
+    height: 24px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+}
+
+.change_lang-en {
+    display: flex;
+    align-items: center;
+    align-self: center;
+    width: 19px;
+    height: 18px;
+    font-family: Gilroy;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    cursor: pointer;
+    border: none;
+    color: #EE4023;
+    background: none;
+    margin-right: 30px;
+}
+
+.contacts_button {
+    display: flex;
+    align-items: center;
+    width: 112px;
+    height: 42px;
+    font-family: Gilroy;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 14px;
+    border-radius: 70px;
+    background-color: rgba(238, 64, 35, 0.1);
+    border: none;
+    color: #EE4023;
+    cursor: pointer;
+    text-align: center;
+    padding: 20px 20px;
+}
+
+.company {
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 600vh;
+}
+
+.about_company {
+    position: absolute;
+    top: 0;
+    align-self: center;
+    width: 1043px;
+    height: 195px;
+    font-weight: 600;
+    font-style: bold;
+    font-size: 64px;
+    line-height: 64px;
+    text-align: center;
+    color: #160F3E;
+    letter-spacing: 0em;
+}
+
+#animation_block {
+    align-self: center;
+    width: 1060px;
+    height: 440px;
+    margin: 200px 0;
+    position: sticky;
+    top: 10%;
+}
+
+
+/* canvas {
+ align-self: center;
+        position: sticky;
+        width: 1260px;
+        height: 640px;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%); 
+} */
+
+.history {
+    align-self: center;
+    flex-direction: row;
+    width: 500px;
+    height: 93px;
+    font-family: Gilroy;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 31px;
+    text-align: center;
+    color: #160F3E;
+    margin-bottom: 100px;
+    position: absolute;
+    bottom: 0;
+}
+
+.history span {
+    color: #EE4023;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    
+}
+
+.card {
+    height: 360px;
+    width: 100%;
+   margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #FFFFFF; 
+}
+
+.card-text {
+    width: 50%;
+}
+
+.card .title {
+    display: flex;
+    font-weight: 700;
+    font-size: 32px;
+    font-style: bold;
+    line-height: 45px;
+    padding: 70px 0 0 70px;
+}
+
+.card-cable {
+    position: relative;
+    justify-content: flex-end;
+}
+
+.card-cable-text {
+    position: absolute;
+    left: 0;
+    width: 70%;
+}
+
+.smooth {
+    color: #003D98;
+}
+
+.corrugated {
+    color: rgba(3, 124, 95, 1);
+}
+
+.cable {
+    color: #7C0303;
+}
+
+.about-card {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 29px;
+    color: #160F3E;
+    width: 539px;
+    height: 116px;
+    margin: 30px 70px;
+}
+
+.cable-about {
+    width: 692px;
+    height: 145px;
+}
+
+.pipes_pic {
+    display: flex;
+    justify-content: flex-end;
+    width: 50%;
+}
+
+.image-pipe {
+    width: 100%;
+}
+
+.corrucated-img {
+    width: 344px;
+}
+
+.photo {
+    display: flex;
+}
+
+.photo-cable {
+    width: 100%;
+}
+
+.sizes {
+    padding-top: 140px;
+    display: flex;
+    flex-direction: column;
+    /* opacity: 0;
+    transform: translateY(20px); */
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    margin: 0 auto;
+    width: 715px;
+}
+
+
+/* 
+.sizes.element-show {
+    opacity: 1;
+    transition: all 1.5s;
+    transform: translateY(0%);
+} */
+
+.sizes_title {
+    justify-content: center;
+    width: 1260px;
+    height: 90px;
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 140%;
+    color: #160F3E;
+    text-align: center;
+    align-self: center;
+}
+
+.block-size {
+    margin-top: 268px;
+    justify-content: center;
+    display: flex;
+}
+
+.size_text {
+    flex-direction: column;
+    align-self: center;
+    width: 80px;
+    height: 72px;
+}
+
+.size_width {
+    align-self: flex-start;
+    font-family: 'Gilroy';
+    font-weight: 600;
+    font-size: 27px;
+    line-height: 140%;
+    text-align: center;
+    color: #160F3E;
+}
+
+.size_of_pipes {
+    align-self: flex-end;
+    font-family: 'Gilroy';
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 140%;
+    color: #160F3E;
+}
+
+#size_image {
+    width: 501px;
+    height: 348px;
+}
+
+.block-quarantee {
+    padding-top: 240px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.quarantee_title {
+    flex-direction: column;
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 140%;
+    text-align: center;
+    color: #160F3E;
+}
+
+.catalogue_btn {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    width: 173px;
+    height: 42px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 14px;
+    border-radius: 70px;
+    background: rgba(22, 15, 62, 0.1);
+    border: none;
+    color: #160F3E;
+    cursor: pointer;
+    text-align: center;
+    padding: 15px 15px;
+}
+
+.footer {
+    display: flex;
+    margin-top: 100px;
+    padding-bottom: 160px;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.footer_title {
+    width: 500px;
+    height: 124px;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 140%;
+    color: rgba(238, 64, 35, 1);
+}
+
+.footer_email_and_number {
+    display: flex;
+    flex-direction: column;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 140%;
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: #160F3E;
+    margin-top: 100px;
+}
+
+.email {
+    border-left: 14px #EE4023 solid;
+    padding-left: 10px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 140%;
+    justify-content: flex-start;
+    align-self: flex-start;
+    letter-spacing: 0.1em;
+    color: #160F3E;
+    margin-bottom: 12px;
+}
+
+.number {
+    margin-top: 12px;
+    border-left: 14px #EE4023 solid;
+    justify-content: flex-start;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 140%;
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: #160F3E;
+    padding-left: 10px;
+    align-self: flex-start;
+}
+
+.place {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-top: 100px;
+    width: 500px;
+    height: 214px;
+}
+
+.title_plant {
+    width: 54px;
+    height: 28px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 140%;
+    color: rgba(238, 64, 35, 1);
+}
+
+.where_are_we_plant {
+    width: 500px;
+    height: 56px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 140%;
+    color: #160F3E;
+    margin-bottom: 15px
+}
+
+.office_title {
+    margin-top: 15px;
+    width: 54px;
+    height: 28px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 140%;
+    color: rgba(238, 64, 35, 1);
+}
+
+.where_are_we_office {
+    width: 500px;
+    height: 56px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 140%;
+    color: #160F3E;
+}
