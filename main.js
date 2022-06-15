@@ -24,9 +24,9 @@ const html = document.documentElement;
 const canvas = document.getElementById('animation_block');
 const context = canvas.getContext('2d');
 
-const frameCount = 34;
+const frameCount = 50;
 const currentFrame = index => (
-    `animation1/anim${index.toString()}.svg`
+    `animation1/anim${index.toString()}.jpg`
 );
 
 const preloadImages = () => {
@@ -40,7 +40,7 @@ const img = new Image();
 img.src = currentFrame(1);
 canvas.width = 1260;
 canvas.height = 640;
-img.onload = function() {
+img.onload = function () {
     context.drawImage(img, 0, 0);
 
 };
@@ -58,7 +58,7 @@ window.addEventListener('scroll', () => {
         frameCount - 1,
         Math.ceil(scrollFraction * frameCount)
     );
-    requestAnimationFrame(() => updateImage(frameIndex + 1));
+    requestAnimationFrame(() => updateImage(frameIndex));
 });
 
 preloadImages();

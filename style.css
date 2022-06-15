@@ -30,7 +30,8 @@
 }
 
 body {
-    background-color: #E5E5E5;;
+    background-color: #E5E5E5;
+    ;
 }
 
 a {
@@ -45,15 +46,14 @@ button :hover {
 .content {
     max-width: 1260px;
     margin: 0 auto;
-    height: 4600px;
 }
 
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 0;
-    height: 192px;
+    height: 120px;
+    margin-bottom: 30px;
 }
 
 .header .content_logo img {
@@ -65,6 +65,63 @@ button :hover {
     display: flex;
     flex-direction: row;
 }
+
+
+.current-lang {
+    margin-right: 12px;
+    width: 80px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 70px;
+    /* background-color: rgba(239, 191, 191, 0.5); */
+    color: #EE4023;
+    font-family: Gilroy;
+    font-weight: 600;
+    font-size: 14px;
+    position: relative;
+}
+
+.lang-list {
+    position: absolute;
+    top: 100%;
+    width: 80px;
+    background-color: rgb(246, 206, 206);
+    border-radius: 10px;
+    opacity: 0;
+    z-index: -1;
+    transition: 0.4s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.option {
+    padding: 10px 0;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    transition: 0.4s;
+    width: 90%;
+    user-select: none;
+}
+
+.option:hover {
+    background-color: #fcfdff;
+    cursor: pointer;
+}
+
+.option:active {
+    transform: scale(0.9);
+}
+
+
+.current-lang:hover .lang-list {
+    opacity: 1;
+    z-index: 100;
+}
+
 
 .change_lang-en {
     display: flex;
@@ -110,8 +167,8 @@ button :hover {
 }
 
 .about_company {
-    position: absolute;
-    top: 0;
+    position: sticky;
+    top: 2%;
     align-self: center;
     width: 1043px;
     height: 195px;
@@ -126,38 +183,31 @@ button :hover {
 
 #animation_block {
     align-self: center;
-    width: 1060px;
-    height: 440px;
-    margin: 200px 0;
+    width: 100%;
+    height: 640px;
+    margin: 100px 0 0 0;
+    padding: 0 20px;
     position: sticky;
-    top: 10%;
+    top: 26%;
 }
 
-
-/* canvas {
- align-self: center;
-        position: sticky;
-        width: 1260px;
-        height: 640px;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%); 
-} */
+.history-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 100px 0;
+}
 
 .history {
     align-self: center;
-    flex-direction: row;
+    text-align: center;
     width: 500px;
-    height: 93px;
     font-family: Gilroy;
     font-weight: 600;
     font-size: 22px;
     line-height: 31px;
     text-align: center;
     color: #160F3E;
-    margin-bottom: 100px;
-    position: absolute;
-    bottom: 0;
 }
 
 .history span {
@@ -168,17 +218,17 @@ button :hover {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    
-    
+
+
 }
 
 .card {
     height: 360px;
     width: 100%;
-   margin-bottom: 20px;
+    margin-bottom: 20px;
     display: flex;
     justify-content: space-between;
-    background-color: #FFFFFF; 
+    background-color: #FFFFFF;
 }
 
 .card-text {

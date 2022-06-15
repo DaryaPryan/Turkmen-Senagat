@@ -22,20 +22,39 @@
             <img src="allImages/Logo.svg">
         </div>
         <div class="buttons">
-            <button class="change_lang-en">EN</button>
+            <!-- <button class="change_lang-en">EN</button> -->
             <!-- <button class="change_lang-ru">RU</button> -->
 
-            <button class="contacts_button"> Contact us</button>
+            <div class="lang-switcher">
+                <div class="current-lang">
+                    <p>EN</p>
+                    <div class="lang-list">
+                        <p class="translate option" id="ru">RU</p>
+                        <p class="translate option" id="en">EN</p>
+                        <p class="translate option" id="tm">TM</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <button class="contacts_button lang" key="contact"> Contact us</button>
 
         </div>
 
     </header>
 
     <div class="company">
-        <div class="about_company">We are the one of the largest enterprises for the production of plastic pipes in Turkmenistan</div>
-       
+        <div class="about_company lang" key="about_company">We are the one of the largest enterprises for the production
+            of plastic pipes
+            in
+            Turkmenistan</div>
+
         <canvas id="animation_block"></canvas>
-        <p class="history">ES <span> Turkmen Senagat</span> was founded in 2008. The company is a member of Industrialists and Entrepreneurs Union of Turkmenistan.</p>
+    </div>
+    <div class="history-wrapper">
+        <p class="history">ES <span> Turkmen Senagat</span> was founded in 2008. The company is a member of
+            Industrialists
+            and Entrepreneurs Union of Turkmenistan.</p>
     </div>
 
     <div class="cards">
@@ -43,7 +62,9 @@
         <div class="card">
             <div class="card-text">
                 <h3 class="title smooth">Smooth pipes from HDPE</h3>
-                <h3 class="about-card ">Smooth HDPE pipes are designed for external and internal pressure pipelines, temporary tubular drainage systems transporting liquid or gaseous substances to which polyethylene is chemically resistant.</h3>
+                <h3 class="about-card ">Smooth HDPE pipes are designed for external and internal pressure pipelines,
+                    temporary tubular drainage systems transporting liquid or gaseous substances to which polyethylene
+                    is chemically resistant.</h3>
             </div>
             <div class="pipes_pic">
                 <img class="image-pipe" src="allImages/smooths_pipes_img.svg">
@@ -53,7 +74,9 @@
         <div class="card">
             <div class="card-text">
                 <h3 class="title corrugated ">Corrugated PE pipes for sewage</h3>
-                <h3 class="about-card ">Sewer polyethylene and polypropylene two-layer corrugated pipes with diameter of 110 - 630 mm. Produced on equipment from a leading German manufacturer Unicor. The degree of hardness is SN4-16.
+                <h3 class="about-card ">Sewer polyethylene and polypropylene two-layer corrugated pipes with diameter of
+                    110 - 630 mm. Produced on equipment from a leading German manufacturer Unicor. The degree of
+                    hardness is SN4-16.
             </div>
             <div class="pipes_pic">
                 <img class="image-pipe corrucated-img" src="allImages/corrugated_pipes_img.svg ">
@@ -63,7 +86,10 @@
         <div class="card card-cable ">
             <div class="card-text card-cable-text">
                 <h3 class="title cable ">Corrugated cable channel for laying electrical networks </h3>
-                <h3 class="about-card cable-about">When reconstructing wiring or installing a new one, it is recommended to “pack” it in a protective sheath. The most commonly used corrugated electric-technical pipes, which are usually called "corrugations for cables and wires. " <br>                    It is a round in cross-section hose with a ribbed surface. <br> Due to ribbing, its flexibility is greatly increased.
+                <h3 class="about-card cable-about">When reconstructing wiring or installing a new one, it is recommended
+                    to “pack” it in a protective sheath. The most commonly used corrugated electric-technical pipes,
+                    which are usually called "corrugations for cables and wires. " <br> It is a round in cross-section
+                    hose with a ribbed surface. <br> Due to ribbing, its flexibility is greatly increased.
             </div>
             <div class="photo">
                 <img class="photo-cable" src="allImages/cable_channel_img.svg ">
@@ -93,7 +119,8 @@
 
 
     <div class="footer ">
-        <div class="footer_title ">We can do anything for your needs wit da bes qualitee. You can download our catalogue or contact ass by email, phone, fax or postal pigeons for more information.</div>
+        <div class="footer_title ">We can do anything for your needs wit da bes qualitee. You can download our catalogue
+            or contact ass by email, phone, fax or postal pigeons for more information.</div>
         <div class="footer_email_and_number ">
             <div class="email ">totktonado96@emel.dev</div>
             <div class="number ">+ 993 62 71 13 10</div>
@@ -101,7 +128,8 @@
         <div class="place ">
 
             <div class="title_plant ">Plant:</div>
-            <div class="where_are_we_plant ">744000, Turkmenistan, Ahal region, Ak Bugday district, industrial zone plot 172</div>
+            <div class="where_are_we_plant ">744000, Turkmenistan, Ahal region, Ak Bugday district, industrial zone plot
+                172</div>
 
 
             <h3 class="office_title ">Office:</h3>
@@ -112,8 +140,8 @@
 </div>
 
 
-
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script src="langSwitcher.js"></script>
 <script src="main.js"></script>
 
 
